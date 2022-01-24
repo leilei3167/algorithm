@@ -28,7 +28,7 @@ func (stack *LinkStack) push(v string) {
 		//说明还没有元素，那么要增加新节点
 		stack.root = new(LinkNode) //增加新节点 并与root链接
 		stack.root.value = v
-
+		//以上判断是否为第一个元素可以省略
 	} else {
 		//说明已有元素，就要将新元素插入到第一个
 		//原来的链表
